@@ -1,11 +1,17 @@
 {
-    "name":     "convert"
-,   "version":  "0.0.1"
-,   "private":  true
-,   "dependencies": {
-        "mkdirp":       "*"
-    ,   "wrench":       "*"
-    ,   "underscore":   "*"
-    ,   "jsdom":        "*"
-    }
+  "name": "convert",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "mkdirp": "*",
+    "wrench": "*",
+    "underscore": "*",
+    "jsdom": "*",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
